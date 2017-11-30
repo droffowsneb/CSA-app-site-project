@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="/open-iconic/font/css/open-iconic.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -27,12 +28,14 @@
 
     <div class="container"> <!-- main body -->
 
-      <div id="accordion" role="tablist">
+      <div class="panel panel-default" role="tablist"> <!-- accordion section -->
+
+        <!-- note: reference https://codepen.io/martinkrulltott/pen/mejmmj for colapsing icon example -->
 
         <div> <!-- veggies section -->
           <div class="list-header" role="tab" id="headingOne">
-            <h4 class="mb-0">
-              <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="trigger collapsed">
                 <i class="fa fa-caret-down toggle-triangle" aria-hidden="true"></i>
                 Veggies
               </a>
@@ -86,7 +89,7 @@
         </div> <!-- end veggies section -->
 
         <div> <!-- fruits section -->
-          <div class="list-item" role="tab" id="headingTwo">
+          <div class="list-header" role="tab" id="headingTwo">
             <h4 class="mb-0">
               <a data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                 <i class="fa fa-caret-down toggle-triangle" aria-hidden="true"></i>
@@ -114,7 +117,7 @@
         </div> <!-- end fruits section -->
 
         <div> <!-- cheese section -->
-          <div class="list-item" role="tab" id="headingThree">
+          <div class="list-header" role="tab" id="headingThree">
             <h4 class="mb-0">
               <a data-toggle="collapse" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
                 <i class="fa fa-caret-down toggle-triangle" aria-hidden="true"></i>

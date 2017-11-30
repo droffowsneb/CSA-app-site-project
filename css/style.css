@@ -1,5 +1,6 @@
 body{
   padding-bottom: 100px;
+  background-color: white;
 }
 
 .jumbotron{
@@ -7,11 +8,24 @@ body{
 }
 
 .jumbotron-content{
+  height: auto;
+  max-height: 100vh;
+  width:auto;
   margin: 75px 0;
 }
 
 nav {
   background-color: lightgrey;
+}
+
+.panel-title .trigger:before {
+  content: '\e082';
+  font-family: 'Glyphicons Halflings';
+  vertical-align: text-bottom;
+}
+
+.panel-title .trigger.collapsed:before {
+  content: '\e081';
 }
 
 .toggle-triangle {
