@@ -7,12 +7,44 @@
 
 body{
   padding-bottom: 100px;
-  background-color: white;
+  background-color: $bg-color;
+}
+
+h1 {
+  font-family: $headline, $headline-fallback;
+  font-weight: bold;
+  color: white;
+}
+
+h1.dark-heading{
+  color: $secondary-color;
+  z-index: 999;
+}
+
+h2, h3, h4, h5, h6, p {
+  font-family: $body, $body-fallback;
+}
+
+h2, h3, h4, h5, h6 {
+  color: white;
+}
+
+h4{
+  color: $primary-color;
+}
+
+a{
+  color: $link-color;
+}
+
+.nav-link.active{
+  background-color: $active-link-color !important;
+  height: 100%;
 }
 
 .jumbotron{
   height: 100vw;
-  background: url("../images/ig-veggies-3.jpg") no-repeat center bottom;
+  background: url("../images/blurry-peppers.jpg") no-repeat center bottom;
   background-size: cover;
 }
 
@@ -20,11 +52,20 @@ body{
   height: auto;
   max-height: 100vh;
   width:auto;
-  margin: 75px 0;
+  margin: 80px 0;
 }
 
-nav {
-  background-color: lightgrey;
+.btn{
+  background-color: $link-color;
+  color: white;
+}
+
+.btn:active{
+  background-color: $active-link-color;
+}
+
+.navbar {
+  background-color: $primary-color;
 }
 
 .toggle-triangle {
@@ -51,4 +92,28 @@ nav {
   width: 35px;
   height: auto;
   margin: auto 0rem;
+}
+
+.back-btn {
+  position: absolute;
+  z-index: 1000;
+  margin: 10px;
+}
+
+@media (max-width: 34em) {
+    .card-columns {
+        -webkit-column-count:2;
+        -moz-column-count:2;
+        column-count:2;
+    }
+}
+
+/* LOCAL FARMS PAGE */
+#googlemaps {
+  height: 100%;
+  width: 100%;
+  position:absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
