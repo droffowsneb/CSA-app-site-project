@@ -9,21 +9,20 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="/open-iconic/font/css/open-iconic.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     <!-- Our Code Starts Here -->
 
-    <div id="googlemaps"></div>
-
     <div> <!-- body -->
-      <div class="back-btn">
-        <button type="button" class="btn btn-secondary btn-sm">< Back</button>
-      </div>
+      <div class="page-head container">
+        <div class="back-btn">
+          <button type="button" class="btn btn-secondary btn-sm">< Back</button>
+        </div>
 
-      <div class="container">
-        <h1 class="dark-heading text-center">Local Farms</h1>
+        <div class="container">
+          <h1 class="dark-heading text-center">Local Farms</h1>
+        </div>
       </div>
 
     </div> <!-- end main body -->
@@ -32,7 +31,9 @@
 
         <ul class="nav nav-justified nav-pills nav-fill">
           <li class="nav-item">
-            <a class="nav-link" href="">Recipes</a>
+            <a class="nav-link" href="">
+              <span class="nav-link-text">Recipes</span>
+            </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="../index.html">Snack Sack List</a>
@@ -44,47 +45,13 @@
 
     </nav> <!-- end nav -->
 
-
-    <!-- Google Maps background code from https://www.labnol.org/internet/embed-google-maps-background/28457/ -->
-    <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
-
-
-    <script type="text/javascript">
-
-    // The latitude and longitude of your business / place
-    var position = [40.0259761, -75.2274273];
-
-    function showGoogleMaps() {
-
-        var latLng = new google.maps.LatLng(position[0], position[1]);
-
-        var mapOptions = {
-            zoom: 9, // initialize zoom level - the max value is 21
-            streetViewControl: false, // hide the yellow Street View pegman
-            scaleControl: true, // allow users to zoom the Google Map
-            mapTypeId: google.maps.MapTypeId.ROADMAP,
-            center: latLng
-        };
-
-        map = new google.maps.Map(document.getElementById('googlemaps'),
-            mapOptions);
-
-        // Show the default red marker at the location
-        marker = new google.maps.Marker({
-            position: latLng,
-            map: map,
-            draggable: false,
-            animation: google.maps.Animation.DROP
-        });
-    }
-
-    google.maps.event.addDomListener(window, 'load', showGoogleMaps);
-    </script>
+    <div id="map"></div>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS, then custom JS in the "bucket" -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <script src="js/bucket.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCp0HRaeILBUA6ToChyLFzANTQvbcYRlpo&callback=initMap" async defer></script>
   </body>
 </html>
