@@ -38,6 +38,15 @@ a{
   color: $link-color;
 }
 
+.navbar {
+  background-color: $primary-color;
+  max-height: 80px;
+}
+
+.nav-link{
+  max-height: 80px;
+}
+
 .nav-link.active{
   background-color: $active-link-color !important;
   height: 100%;
@@ -45,8 +54,17 @@ a{
 
 .nav-link-text{
   font-size: 0.75rem;
-  position: absolute;
-  bottom: 0;
+  color: $body-text-color;
+}
+
+a.active .nav-link-text{
+  color: $primary-color;
+}
+
+.nav-img{
+  max-height: 45px;
+  width: auto;
+  margin-top: 2px;
 }
 
 .jumbotron{
@@ -69,10 +87,6 @@ a{
 
 .btn:active{
   background-color: $active-link-color;
-}
-
-.navbar {
-  background-color: $primary-color;
 }
 
 .toggle-triangle {

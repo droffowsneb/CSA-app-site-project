@@ -17,7 +17,7 @@
     <div> <!-- body -->
       <div class="page-head container">
         <div class="back-btn">
-          <button type="button" class="btn btn-secondary btn-sm">< Back</button>
+          <a href="index.html"><button type="button" class="btn btn-secondary btn-sm">< Back</button></a>
         </div>
 
         <div class="container">
@@ -27,22 +27,22 @@
 
     </div> <!-- end main body -->
 
-    <nav class="navbar fixed-bottom d-print"> <!-- nav bar -->
+    <nav class="navbar fixed-bottom d-print nav-justified nav-fill"> <!-- nav bar -->
 
-        <ul class="nav nav-justified nav-pills nav-fill">
-          <li class="nav-item">
-            <a class="nav-link" href="recipes.html">
-              <img src="images/recipes-icon.svg" alt="Recipes icon">
-              <span class="nav-link-text">Recipes</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Snack Sack List</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Local Farms</a>
-          </li>
-        </ul>
+      <a class="nav-link nav-item" href="recipes.html">
+        <img src="images/recipes-icon.svg" class="nav-img" alt="Recipes icon">
+        <span class="nav-link-text">Recipes</span>
+      </a>
+
+      <a class="nav-link nav-item" href="index.html">
+        <img src="images/snack-sack-icon.svg" class="nav-img" alt="CSA Snack Sack icon">
+        <span class="nav-link-text">Snack Sack List</span>
+      </a>
+
+      <a class="nav-link nav-item active" href="#">
+        <img src="images/pin-icon.svg" class="nav-img" alt="Local Farms icon">
+        <span class="nav-link-text">Local Farms</span>
+      </a>
 
     </nav> <!-- end nav -->
 
