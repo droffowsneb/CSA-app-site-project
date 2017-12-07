@@ -17,7 +17,7 @@ h1 {
 }
 
 h1.dark-heading{
-  color: $secondary-color;
+  color: $primary-color;
   z-index: 999;
   padding: 5px;
 }
@@ -31,7 +31,11 @@ h2, h3, h4, h5, h6 {
 }
 
 h4{
-  color: $primary-color;
+  color: $secondary-color;
+}
+
+h4.card-title{
+  font-size: 1.2em;
 }
 
 a{
@@ -83,6 +87,13 @@ a.active .nav-link-text{
 .btn{
   background-color: $link-color;
   color: white;
+}
+
+.recipes-button{
+  width: 165px;
+  font-size: .75em;
+  white-space: normal;
+  margin: 10px 10px 20px 10px;
 }
 
 .btn:active{
