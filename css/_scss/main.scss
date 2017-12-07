@@ -26,11 +26,11 @@ h2, h3, h4, h5, h6, p {
   font-family: $body, $body-fallback;
 }
 
-h2, h3, h4, h5, h6 {
+h2, h3, h5.light, h6 {
   color: white;
 }
 
-h4{
+h4, h5{
   color: $secondary-color;
 }
 
@@ -109,10 +109,18 @@ intro-btn{
   padding-right: 5px;
 }
 
-.list-item, .list-header{
-  padding: .75rem;
+li.active{
+  background-color: $active-link-color !important;
+  border: 1px solid grey !important;
+}
+
+.list-item, .list-header, .kitchen-item{
   border: 1px solid grey;
   background-color: #e9ecef;
+}
+
+.list-item, .list-header{
+  padding: .75rem;
 }
 
 .list-header{
