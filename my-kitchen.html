@@ -17,14 +17,22 @@
     <!-- Our Code Starts Here -->
 
     <div class="container"> <!-- heading -->
-      <div class="back-btn">
-        <a href="index.html"><button type="button" class="btn btn-secondary btn-sm">< Back</button></a>
+      <!-- <div class="back-btn">
+        <a href="recipes.html"><button type="button" class="btn btn-secondary btn-sm">< Back</button></a>
+      </div> -->
+      <h1 class="dark-heading text-center display-3">My Kitchen</h1>
+      <div class="row">
+        <a href="recipes.html">
+          <button type="button" class="btn btn-secondary btn-lg recipes-button active">"My Kitchen" List</button>
+        </a>
+        <button type="button" class="btn btn-secondary btn-lg recipes-button disabled">Filter Recipes</button>
       </div>
-      <h1 class="dark-heading text-center">My Kitchen</h1>
     </div>
 
     <div class="container"> <!-- list section -->
-      <p>Please select the items below that you currently have in your kitchen, then filter the Recipes list to find the perfect meal to create with your Snack Sack!</p>
+      <small><em><a href="recipes.html">Recipes</a> > My Kitchen</em></small>
+      <p></p>
+      <p>Check the items stocked in your kitchen to activate the recipe filter.</p>
 
       <ul class="list-group">
         <li class="list-group-item kitchen-item"><i class="fa fa-square-o" aria-hidden="true"></i> Butter</li>
@@ -44,6 +52,10 @@
         <li class="list-group-item kitchen-item active"><i class="fa fa-check-square-o" aria-hidden="true"></i> Spinach</li>
         <li class="list-group-item kitchen-item active"><i class="fa fa-check-square-o" aria-hidden="true"></i> Tomato</li>
       </ul>
+
+      <a href="recipes-filtered.html">
+        <button type="button" class="btn btn-secondary btn-lg recipes-button centered">Find a Recipe</button>
+      </a>
 
       <!--
       <div class="list-item kitchen-item">
