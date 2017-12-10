@@ -7,7 +7,7 @@
 
 body{
   padding-bottom: 100px;
-  background-color: $bg-color;
+  background-color: $background-color;
 }
 
 h1 {
@@ -24,14 +24,19 @@ h1.dark-heading{
 
 h2, h3, h4, h5, h6, p {
   font-family: $body, $body-fallback;
+  color: $body-text-color;
+}
+
+.muted{
+  color: $body-text-color-muted;
 }
 
 h2, h3, h5.light, h6 {
   color: white;
 }
 
-h4, h5{
-  color: $secondary-color;
+h4, h5 {
+  color: $primary-color;
 }
 
 h4.card-title{
@@ -40,6 +45,10 @@ h4.card-title{
 
 a{
   color: $link-color;
+}
+
+a.trigger {
+  color: $body-text-color;
 }
 
 .navbar {
@@ -53,6 +62,7 @@ a{
 
 .nav-link.active{
   background-color: $active-link-color !important;
+  color: $body-text-color;
   height: 100%;
 }
 
@@ -85,15 +95,9 @@ a.active .nav-link-text{
 }
 
 .btn{
-  background-color: $link-color;
+  background-color: $btn-color;
   color: white;
-}
-
-.recipes-button{
-  width: 165px;
-  font-size: .75em;
-  white-space: normal;
-  margin: 10px 10px 20px 10px;
+  border: 1px solid $body-text-color-muted;
 }
 
 .btn:active{
@@ -102,6 +106,13 @@ a.active .nav-link-text{
 
 .intro-btn{
   margin-top: 10px;
+}
+
+.recipes-button{
+  max-width: 165px;
+  font-size: .75em;
+  white-space: normal;
+  margin: 10px 10px 20px 10px;
 }
 
 .toggle-triangle {
@@ -114,8 +125,12 @@ li.active{
   border: 1px solid grey !important;
 }
 
+.list-item, .list-header, .kitchen-item, .card{
+  border: 1px solid $body-text-color-muted;
+}
+
 .list-item, .list-header, .kitchen-item{
-  border: 1px solid grey;
+  margin-bottom: -1px;
   background-color: #e9ecef;
 }
 
@@ -124,7 +139,7 @@ li.active{
 }
 
 .list-header{
-  background-color: lightgrey;
+  background-color: $primary-color;
 }
 
 .list-item>h5, .list-item>p{
@@ -136,6 +151,17 @@ li.active{
   width: 35px;
   height: auto;
   margin: auto 0rem;
+}
+
+.list-kitchen-sack{
+  float: right;
+  width: 21px;
+  height: auto;
+  margin: auto 0rem;
+}
+
+.kitchen-active{
+  background-color: $secondary-color;
 }
 
 .back-btn {
