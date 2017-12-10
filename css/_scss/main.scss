@@ -31,11 +31,11 @@ h2, h3, h4, h5, h6, p {
   color: $body-text-color-muted;
 }
 
-h2, h3, h5.light, h6 {
+h5.light {
   color: white;
 }
 
-h4, h5 {
+h2, h3, h4, h5, h6 {
   color: $primary-color;
 }
 
@@ -180,6 +180,7 @@ li.active{
 
 .kitchen-active{
   background-color: $secondary-color;
+  font-weight: normal;
 }
 
 .back-btn {
@@ -218,4 +219,10 @@ li.active{
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.recipe-banner{
+  width: 100%;
+  height: auto;
+  margin: 15px 0;
 }
