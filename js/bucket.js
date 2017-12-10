@@ -36,7 +36,7 @@ function initMap() {
     zoom: 8,
   });
 
-  // var infowindow = new google.maps.InfoWindow();
+  var infowindow = new google.maps.InfoWindow();
 
   var marker1 = new google.maps.Marker({ // RCO
     map: map,
@@ -59,10 +59,14 @@ function initMap() {
     '</div>'+
     '</div>';
   var castleValleyInfoWindow = new google.maps.InfoWindow({
-    content: castleValleyInfo
+    content: castleValleyInfo,
   });
   marker2.addListener('click', function() {
-    castleValleyInfoWindow.open(map, marker2);
+    infowindow.open(map, marker2);
+    infowindow.setOptions({
+        content: castleValleyInfo,
+    });
+    //castleValleyInfoWindow.open(map, marker2);
   });
 
 
@@ -84,8 +88,14 @@ function initMap() {
     content: koffmansFruitInfo
   });
   marker3.addListener('click', function() {
-    koffmansFruitInfoWindow.open(map, marker3);
+    infowindow.setOptions({
+        content: koffmansFruitInfo,
+    });
+    infowindow.open(map, marker3);
+
+    //koffmansFruitInfoWindow.open(map, marker3);
   });
+
 
   var marker4 = new google.maps.Marker({
     map: map,
