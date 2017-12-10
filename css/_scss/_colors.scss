@@ -1,25 +1,28 @@
 // Color Variables
 
-// $primary-color: #7CD27C;
+$primary-color: rgb(0,161,80); // dark cyan - lime green #00a150
+$secondary-color: #00d469;
+$btn-color: rgb(82,167,202); // moderate blue #579cda
+$link-color: 	rgb(60,189,227); // bright cyan #3cbde3
+$active-link-color: rgb(26,148,184); // strong cyan #1a94b8
+$body-text-color: rgb(13,36,57); // "Very dark blue" #0D2439
+$body-text-color-muted: rgb(110,124,136); // "Dark grayish blue" #6e7c88
+$background-color: rgb(235,235,211); // eggshell/light grayish yellow #ebebd3
+
+
 
 /* previous colors
+// $primary-color: #7CD27C;
+
 $primary-color: rgb(156,218,87); // green #9cda57
 $secondary-color: rgb(218, 149, 87); // soft orange #da9557
 $secondary-color: #FFBA08;
 $link-color: rgb(87,156,218); // blue #579cda
 $active-link-color: rgb(41,118,187); // dark blue #2976bb
+$bg-color: rgba(255, 255, 255, 1); // white
+$highlight-color: rgba(255, 255, 255, 0.75);
+$heading-text-box-color: rgba(0, 71, 71, 0.75);
 */
 
 // $primary-color: rgb(117,182,30); // strong green #75b61e
-$primary-color: rgb(0,161,80); // dark cyan - lime green #00a150
 // $secondary-color: rgb(253,179,31); // vivid orange #fdb31f
-$secondary-color: #00d469;
-$btn-color: rgb(82,167,202); // moderate blue #579cda
-$link-color: 	rgb(60,189,227); // bright cyan #3cbde3
-$active-link-color: rgb(26,148,184); // strong cyan #1a94b8
-$bg-color: rgba(255, 255, 255, 1); // white
-$highlight-color: rgba(255, 255, 255, 0.75);
-$body-text-color: rgb(13,36,57); // "Very dark blue" #0D2439
-$body-text-color-muted: rgb(110,124,136); // "Dark grayish blue" #6e7c88
-$heading-text-box-color: rgba(0, 71, 71, 0.75);
-$background-color: rgb(235,235,211); // eggshell/light grayish yellow #ebebd3
