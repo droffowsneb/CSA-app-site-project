@@ -47,6 +47,10 @@ h4.card-title{
   font-size: 1.2em;
 }
 
+.card img{
+  border-bottom: 1px solid $body-text-color-muted;
+}
+
 a{
   color: $link-color;
 }
@@ -103,9 +107,8 @@ a.trigger {
   border: 1px outset $body-text-color-muted;
 }
 
-button.active{
-  background-color: $body-text-color-muted !important;
-  border: 1px outset $btn-color !important;
+a.active{
+  background-color: $active-link-color !important;
 }
 
 .intro-btn{
@@ -183,6 +186,23 @@ li.active{
   margin: auto 0rem;
 }
 
+.list-recipe-sack{
+  float: left;
+  width: 21px;
+  height: auto;
+  margin: .3rem 0.3rem 0 0;
+}
+
+.list-group-item{
+  padding: 1rem 1.25rem;
+}
+
+p.recipe-sack{
+  margin-top: .4rem;
+  margin-bottom: 0;
+  font-size: .9rem;
+}
+
 .kitchen-active{
   background-color: $secondary-color;
   font-weight: normal;
@@ -238,4 +258,8 @@ li.active{
 
 ol li{
   margin-bottom: 15px;
+}
+
+.secondary{
+  color: $secondary-color;
 }
