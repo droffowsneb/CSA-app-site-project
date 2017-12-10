@@ -133,6 +133,20 @@ li.active{
   background-color: #e9ecef;
 }
 
+.kitchen-item-unchecked:before{
+  content: "\f096  ";
+  display: inline;
+  font-family: FontAwesome;
+  margin-right: 5px;
+}
+
+.kitchen-item-checked:before{
+  content: "\f046  ";
+  display: inline;
+  font-family: FontAwesome;
+  margin-right: 5px;
+}
+
 .list-item, .list-header{
   padding: .75rem;
 }

@@ -19,3 +19,12 @@ function initMap() {
     zoom: 9,
   });
 }
+
+$(document).ready(function($){
+
+  // My Kitchen item checkmarks toglle
+  $('li.kitchen-item').click(function() {
+     $(this).find('span').toggleClass('kitchen-item-unchecked kitchen-item-checked');
+  });
+
+});
