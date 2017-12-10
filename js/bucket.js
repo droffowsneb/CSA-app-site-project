@@ -38,13 +38,13 @@ function initMap() {
 
   var infowindow = new google.maps.InfoWindow();
 
-  var marker1 = new google.maps.Marker({ // RCO
+  var marker1 = new google.maps.Marker({ // ------------------ River City Outpost ------------------
     map: map,
     position: riverCity,
     title: 'River City Outpost'
   });
 
-  var marker2 = new google.maps.Marker({ // --------- Castle Valley Mill ---------
+  var marker2 = new google.maps.Marker({ // ------------------ Castle Valley Mill ------------------
     map: map,
     position: castleValley,
     title: 'Castle Valley Mill',
@@ -66,11 +66,10 @@ function initMap() {
     infowindow.setOptions({
         content: castleValleyInfo,
     });
-    //castleValleyInfoWindow.open(map, marker2);
   });
 
 
-  var marker3 = new google.maps.Marker({ // --------- Koffman's Fruit Farm ---------
+  var marker3 = new google.maps.Marker({ // ------------------ Koffman's Fruit Farm ------------------
     map: map,
     position: koffmansFruit,
     title: 'Koffman&#39;s Fruit Farm'
@@ -92,21 +91,56 @@ function initMap() {
         content: koffmansFruitInfo,
     });
     infowindow.open(map, marker3);
-
-    //koffmansFruitInfoWindow.open(map, marker3);
   });
 
 
-  var marker4 = new google.maps.Marker({
+  var marker4 = new google.maps.Marker({ // ------------------ Maplehofe Dairy ------------------
     map: map,
     position: maplehofe,
     title: 'Maplehofe Dairy Farm Store'
   });
+  var maplehofeInfo = '<div id="content">'+
+    '<div id="siteNotice">'+
+    '</div>'+
+    '<h3 id="firstHeading" class="firstHeading">Maplehofe Dairy Farm Store</h3>'+
+    '<div id="bodyContent">'+
+    '<p>The Maplehofe story began with the Glick family farm, developed in 1948 by Aaron and Susie Glick. We built the existing Quarryville store and the original processing plant in 1974 to meet the growing demand for our farm fresh milk and eggs. In 1999 we added a dairy stand and bulk food stand at the historic Lancaster Central Market. The dairy started an expansion project in 2015 and opened a new processing plant in Quarryville at the beginning of 2016. We are deeply grateful for the relationships we have with individuals, families and businesses in our area.</p>'+
+    '<p><a href="http://www.maplehofedairy.com/">Learn more »</a></p>'+
+    '</div>'+
+    '</div>';
+  var maplehofeInfoWindow = new google.maps.InfoWindow({
+    content: maplehofeInfo
+  });
+  marker4.addListener('click', function() {
+    infowindow.setOptions({
+        content: maplehofeInfo,
+    });
+    infowindow.open(map, marker4);
+  });
 
-  var marker5 = new google.maps.Marker({
+
+  var marker5 = new google.maps.Marker({ // ------------------ Soom Foods ------------------
     map: map,
     position: soomFoods,
     title: 'Soom Foods'
+  });
+  var soomInfo = '<div id="content">'+
+    '<div id="siteNotice">'+
+    '</div>'+
+    '<h3 id="firstHeading" class="firstHeading">Soom Foods</h3>'+
+    '<div id="bodyContent">'+
+    '<p>Soom Foods is a leading purveyor of premium tahini – a paste made from 100% roasted and pressed sesame seeds. Soom Tahini is a delicious, nutritious and versatile ingredient favored by at-home and professional chefs.</p>'+
+    '<p><a href="https://www.soomfoods.com/">Learn more »</a></p>'+
+    '</div>'+
+    '</div>';
+  var soomInfoWindow = new google.maps.InfoWindow({
+    content: soomInfo
+  });
+  marker5.addListener('click', function() {
+    infowindow.setOptions({
+        content: soomInfo,
+    });
+    infowindow.open(map, marker5);
   });
 
   var marker6 = new google.maps.Marker({

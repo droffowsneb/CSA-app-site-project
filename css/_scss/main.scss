@@ -59,13 +59,19 @@ a.trigger {
   color: $body-text-color;
 }
 
+nav{
+  margin-bottom: 0 !important;
+}
+
 .navbar {
   background-color: $primary-color;
   max-height: 80px;
+  padding: 0;
 }
 
 .nav-link{
   max-height: 80px;
+  width: 33.333%;
   color: $btn-color;
 }
 
@@ -78,6 +84,9 @@ a.trigger {
 .nav-link-text{
   font-size: 0.75rem;
   color: $body-text-color;
+  display: block;
+  margin: 5px auto;
+  text-align: center;
 }
 
 //a.active .nav-link-text{ color: $primary-color; }
