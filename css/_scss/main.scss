@@ -95,11 +95,12 @@ a.trigger {
 .btn{
   background-color: $btn-color;
   color: white;
-  border: 1px solid $body-text-color-muted;
+  border: 1px outset $body-text-color-muted;
 }
 
-.btn:active{
-  background-color: $active-link-color;
+button.active{
+  background-color: $body-text-color-muted !important;
+  border: 1px outset $btn-color !important;
 }
 
 .intro-btn{
@@ -131,6 +132,10 @@ li.active{
 .list-item, .list-header, .kitchen-item{
   margin-bottom: -1px;
   background-color: #e9ecef;
+}
+
+.kitchen-item{
+  margin-left: 5px;
 }
 
 .kitchen-item-unchecked:before{
