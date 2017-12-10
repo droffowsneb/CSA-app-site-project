@@ -22,6 +22,10 @@ h1.dark-heading{
   padding: 5px;
 }
 
+h2{
+  margin-bottom: 1rem;
+}
+
 h2, h3, h4, h5, h6, p {
   font-family: $body, $body-fallback;
   color: $body-text-color;
@@ -58,10 +62,11 @@ a.trigger {
 
 .nav-link{
   max-height: 80px;
+  color: $btn-color;
 }
 
 .nav-link.active{
-  background-color: $link-color !important;
+  background-color: $btn-color !important;
   color: $body-text-color;
   height: 100%;
 }
@@ -225,4 +230,12 @@ li.active{
   width: 100%;
   height: auto;
   margin: 15px 0;
+}
+
+.nav-justified{
+  margin: 0 0 10px;
+}
+
+ol li{
+  margin-bottom: 15px;
 }

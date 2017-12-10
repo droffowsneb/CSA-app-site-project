@@ -23,27 +23,43 @@
 
     <div class="container"> <!-- body content -->
       <img class="recipe-banner" src="images/ginger-salad.jpg" alt="inger, radish, and carrots salad photo">
-      <div class="tab-controller">
-        <div class="ingredients">
-          <h6>Ingredients</h6>
+
+      <ul class="nav nav-pills nav-justified" id="recipeTabs" role="tablist"> <!-- https://getbootstrap.com/docs/4.0/components/navs/#javascript-behavior -->
+        <li class="nav-item">
+          <a class="nav-link active" id="ingredients-tab" data-toggle="tab" href="#ingredients" role="tab" aria-controls="ingredients" aria-selected="true">Ingredients</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="instructions-tab" data-toggle="tab" href="#instructions" role="tab" aria-controls="instructions" aria-selected="false">Instructions</a>
+        </li>
+      </ul>
+
+      <div class="tab-content" id="recipeTabContent">
+        <div class="tab-pane fade show active" id="ingredients" role="tabpanel" aria-labelledby="ingredients-tab">
+          <h2>Ingredients</h2>
+          <ul class="list-group">
+            <li class="list-group-item kitchen-item"><span class="kitchen-item-checked">2 Tbsp rice <strong>vinegar</strong></span></li>
+            <li class="list-group-item kitchen-item"><span class="kitchen-item-checked">2 Tbsp <strong>coconut aminos</strong></span></li>
+            <li class="list-group-item kitchen-item"><span class="kitchen-item-checked">2 tsp <strong>maple syrup</strong></span></li>
+            <li class="list-group-item kitchen-item kitchen-active"><span class="kitchen-item-checked"><strong>Ginger root</strong></span><img src="images/snack-sack-icon-2.svg" alt="snack sack icon" class="list-kitchen-sack"></li>
+            <li class="list-group-item kitchen-item"><span class="kitchen-item-checked">1/4 tsp granulated <strong>garlic</strong></span></li>
+            <li class="list-group-item kitchen-item"><span class="kitchen-item-checked">1/4 tsp <strong>salt</strong></span></li>
+            <li class="list-group-item kitchen-item"><span class="kitchen-item-checked">1 Tbsp extra-virgin <strong>olive oil</strong></span></li>
+            <li class="list-group-item kitchen-item kitchen-active"><span class="kitchen-item-checked">3 cups julienne cut/shredded <strong>carrots</strong> (about 5 large)</span><img src="images/snack-sack-icon-2.svg" alt="snack sack icon" class="list-kitchen-sack"></li>
+            <li class="list-group-item kitchen-item kitchen-active"><span class="kitchen-item-checked">1 cup julienne cut <strong>Radishes</strong></span><img src="images/snack-sack-icon-2.svg" alt="snack sack icon" class="list-kitchen-sack"></li>
+            <li class="list-group-item kitchen-item"><span class="kitchen-item-checked">1/2 cup flat leaf <strong>parsley leaves</strong>, cut into tiny ribbons</span></li>
+          </ul>
         </div>
-        <div class="instructions">
-          <h6>Instructions</h6>
+
+        <div class="tab-pane fade" id="instructions" role="tabpanel" aria-labelledby="instructions-tab">
+          <h2>Instructions</h2>
+          <ol>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis eleifend ex.</li>
+            <li>Nulla et metus ac ante porttitor sollicitudin. Curabitur rhoncus tortor vel orci lacinia, vel venenatis erat fringilla.</li>
+            <li>Morbi mattis, leo sed molestie mattis, odio est fermentum mi, et vestibulum quam elit et sem.</li>
+            <li>Enjoy!</li>
+          </ol>
         </div>
       </div>
-      <h2>Ingredients</h2>
-      <ul class="list-group">
-        <li class="list-group-item kitchen-item"><span class="kitchen-item-checked">2 Tbsp rice <strong>vinegar</strong></span></li>
-        <li class="list-group-item kitchen-item"><span class="kitchen-item-checked">2 Tbsp <strong>coconut aminos</strong></span></li>
-        <li class="list-group-item kitchen-item"><span class="kitchen-item-checked">2 tsp <strong>maple syrup</strong></span></li>
-        <li class="list-group-item kitchen-item kitchen-active"><span class="kitchen-item-checked"><strong>Ginger root</strong></span><img src="images/snack-sack-icon-2.svg" alt="snack sack icon" class="list-kitchen-sack"></li>
-        <li class="list-group-item kitchen-item"><span class="kitchen-item-checked">1/4 tsp granulated <strong>garlic</strong></span></li>
-        <li class="list-group-item kitchen-item"><span class="kitchen-item-checked">1/4 tsp <strong>salt</strong></span></li>
-        <li class="list-group-item kitchen-item"><span class="kitchen-item-checked">1 Tbsp extra-virgin <strong>olive oil</strong></span></li>
-        <li class="list-group-item kitchen-item kitchen-active"><span class="kitchen-item-checked">3 cups julienne cut/shredded <strong>carrots</strong> (about 5 large)</span><img src="images/snack-sack-icon-2.svg" alt="snack sack icon" class="list-kitchen-sack"></li>
-        <li class="list-group-item kitchen-item kitchen-active"><span class="kitchen-item-checked">1 cup julienne cut <strong>Radishes</strong></span><img src="images/snack-sack-icon-2.svg" alt="snack sack icon" class="list-kitchen-sack"></li>
-        <li class="list-group-item kitchen-item"><span class="kitchen-item-checked">1/2 cup flat leaf <strong>parsley leaves</strong>, cut into tiny ribbons</span></li>
-      </ul>
 
     </div> <!-- end body content -->
 
