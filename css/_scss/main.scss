@@ -114,6 +114,21 @@ nav{
   margin: 80px 0;
 }
 
+.introVideo-thumb{
+  width: 100%;
+  height: auto;
+}
+
+.modal-body{
+  text-align: center;
+}
+
+.fa-play-circle{
+  position: relative;
+  bottom: 110px;
+  color: $btn-color;
+}
+
 .btn{
   background-color: $btn-color;
   color: white;

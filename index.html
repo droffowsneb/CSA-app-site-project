@@ -21,8 +21,29 @@
         <h1>CSA SNACK SACK</h1>
         <h5 class="light">from your friends at <br>River City Outpost.</h5>
         <p class="lead">
-          <a class="btn btn-primary intro-btn" href="#" role="button"><i class="fa fa-play" aria-hidden="true"></i> Intro Video</a>
+          <a class="btn btn-primary intro-btn" href="#" role="button" data-toggle="modal" data-target="#introVideoModal"><i class="fa fa-play" aria-hidden="true"></i> Intro Video</a>
         </p>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="introVideoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Welcome to this week's <br>CSA Snack Sack!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="images/patrick-photo.jpg" alt="intro video thumbnail" class="introVideo-thumb">
+            <i class="fa fa-play-circle fa-3x" aria-hidden="true"></i>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
       </div>
     </div>
 
