@@ -43,6 +43,24 @@ function initMap() {
     position: riverCity,
     title: 'River City Outpost'
   });
+  var riverCityInfo = '<div id="content">'+
+    '<div id="siteNotice">'+
+    '</div>'+
+    '<h3 id="firstHeading" class="firstHeading">River City Outpost</h3>'+
+    '<div id="bodyContent">'+
+    '<p>Market and slow-food cafe offering fresh produce, local dry goods and provisions.</p>'+
+    '<p><a href="https://www.facebook.com/rivercityoutpost/">Follow us on Facebook »</a></p>'+
+    '</div>'+
+    '</div>';
+  var riverCityInfoWindow = new google.maps.InfoWindow({
+    content: riverCityInfo,
+  });
+  marker1.addListener('click', function() {
+    infowindow.open(map, marker1);
+    infowindow.setOptions({
+        content: riverCityInfo,
+    });
+  });
 
   var marker2 = new google.maps.Marker({ // ------------------ Castle Valley Mill ------------------
     map: map,
@@ -143,12 +161,31 @@ function initMap() {
     infowindow.open(map, marker5);
   });
 
-  var marker6 = new google.maps.Marker({
+  var marker6 = new google.maps.Marker({ // ------------------ Daisy Flour ------------------
     map: map,
     position: daisyFlour,
     title: 'Daisy Flour'
   });
+  var daisyInfo = '<div id="content">'+
+    '<div id="siteNotice">'+
+    '</div>'+
+    '<h3 id="firstHeading" class="firstHeading">Daisy Flour</h3>'+
+    '<div id="bodyContent">'+
+    '<p>Great recipes begin with Daisy Flour, wholesome goodness, milled the old-fashioned way! 100% organic, GMO-FREE.</p>'+
+    '<p><a href="http://www.daisyflour.com/">Learn more »</a></p>'+
+    '</div>'+
+    '</div>';
+  var daisyInfoWindow = new google.maps.InfoWindow({
+    content: daisyInfo
+  });
+  marker6.addListener('click', function() {
+    infowindow.setOptions({
+        content: daisyInfo,
+    });
+    infowindow.open(map, marker6);
+  });
 }
+
 
 
 
