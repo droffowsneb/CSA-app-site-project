@@ -8,14 +8,16 @@ function initMap() {
   var daisyFlour = {lat: 40.0401, lng: -76.32451};
 
   var farmPinIcon = 'http://benswofford.com/csa-app-demo/images/farm-pin-blue.png';
-  var rcoIcon = 'http://benswofford.com/csa-app-demo/images/rco-squirrel-50.png';
+  var rcoIcon = 'http://benswofford.com/csa-app-demo/images/rco-squirrel-40.png';
 
   map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 40.1237552, lng: -75.6146457},
     zoom: 8,
   });
 
-  var infowindow = new google.maps.InfoWindow();
+  var infowindow = new google.maps.InfoWindow({
+    maxWidth: 225,
+  });
 
   var marker1 = new google.maps.Marker({ // ------------------ River City Outpost ------------------
     map: map,
