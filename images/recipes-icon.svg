@@ -1,1 +1,55 @@
-<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 293.33 342"><defs><style>.cls-1,.cls-6,.cls-7{fill:none;}.cls-2,.cls-4{fill:#9cda57;}.cls-2,.cls-4,.cls-6,.cls-7{stroke:#000;stroke-miterlimit:10;}.cls-2,.cls-6{stroke-width:6px;}.cls-3{clip-path:url(#clip-path);}.cls-4{stroke-width:7px;}.cls-5{clip-path:url(#clip-path-2);}.cls-7{stroke-width:5px;}</style><clipPath id="clip-path"><path class="cls-1" d="M307.59,149.77c-.06.87-241.51,93.68-241.33,94.51,4.36,20.43,77.12,28.6,98.3,29.81,20,1.15,92.84-.15,107.5-17.42,1.52-1.8,35.39-104.75,35.53-106.9"/></clipPath><clipPath id="clip-path-2"><polygon class="cls-1" points="3 99.97 94.06 9.33 121 11.85 119.72 114.45 6.21 122 3 99.97"/></clipPath></defs><title>recipes-icon</title><path class="cls-2" d="M9,288V90L92,7s99.67,1,117,1c11.17,0,21.83,3,22,19,1,15-2,263-2,263Z"/><circle cx="32.67" cy="123.33" r="8.67"/><circle cx="32.67" cy="154.17" r="8.67"/><circle cx="32.67" cy="185.01" r="8.67"/><circle cx="32.67" cy="215.85" r="8.67"/><circle cx="32.67" cy="246.82" r="8.67"/><rect x="52" y="243.14" width="162" height="7.37"/><rect x="52" y="211.97" width="162" height="7.37"/><rect x="52" y="180.8" width="162" height="7.37"/><rect x="52" y="149.64" width="162" height="7.37"/><rect x="52" y="118.47" width="162" height="7.37"/><rect x="112.44" y="85.14" width="101.56" height="6.9"/><path class="cls-2" d="M77.88,254.82c-.48,57.3,77.48,71.05,99.49,71.82s108.1-13.37,108.57-72.2"/><ellipse class="cls-2" cx="181.96" cy="256.43" rx="104.37" ry="20.73"/><g class="cls-3"><rect class="cls-4" x="128.26" y="238.03" width="183" height="13.43" rx="5.61" ry="5.61" transform="translate(-108.96 256.48) rotate(-50.12)"/></g><g class="cls-5"><rect class="cls-6" x="-11.67" width="102" height="88.4" rx="12" ry="12"/></g><ellipse class="cls-2" cx="98.41" cy="303.67" rx="37.76" ry="27.63" transform="translate(-138.65 89.89) rotate(-30)"/><ellipse class="cls-2" cx="43.28" cy="304.44" rx="37.76" ry="27.63" transform="translate(-19.19 3.35) rotate(-3.63)"/><rect class="cls-7" x="114.08" y="25.78" width="97.92" height="33.89"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 293.3 342" style="enable-background:new 0 0 293.3 342;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#00D469;stroke:#000000;stroke-width:6;stroke-miterlimit:10;}
+	.st1{clip-path:url(#SVGID_2_);}
+	.st2{fill:#00D469;stroke:#000000;stroke-width:7;stroke-miterlimit:10;}
+	.st3{clip-path:url(#SVGID_4_);}
+	.st4{fill:none;stroke:#000000;stroke-width:6;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#000000;stroke-width:5;stroke-miterlimit:10;}
+</style>
+<title>recipes-icon</title>
+<path class="st0" d="M9,288V90L92,7c0,0,99.7,1,117,1c11.2,0,21.8,3,22,19c1,15-2,263-2,263L9,288z"/>
+<circle cx="32.7" cy="123.3" r="8.7"/>
+<circle cx="32.7" cy="154.2" r="8.7"/>
+<circle cx="32.7" cy="185" r="8.7"/>
+<circle cx="32.7" cy="215.9" r="8.7"/>
+<circle cx="32.7" cy="246.8" r="8.7"/>
+<rect x="52" y="243.1" width="162" height="7.4"/>
+<rect x="52" y="212" width="162" height="7.4"/>
+<rect x="52" y="180.8" width="162" height="7.4"/>
+<rect x="52" y="149.6" width="162" height="7.4"/>
+<rect x="52" y="118.5" width="162" height="7.4"/>
+<rect x="112.4" y="85.1" width="101.6" height="6.9"/>
+<path class="st0" d="M77.9,254.8c-0.5,57.3,77.5,71,99.5,71.8s108.1-13.4,108.6-72.2"/>
+<ellipse class="st0" cx="182" cy="256.4" rx="104.4" ry="20.7"/>
+<g>
+	<defs>
+		<path id="SVGID_1_" d="M307.6,149.8c-0.1,0.9-241.5,93.7-241.3,94.5c4.4,20.4,77.1,28.6,98.3,29.8c20,1.1,92.8-0.1,107.5-17.4
+			C273.6,254.9,307.5,151.9,307.6,149.8"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g class="st1">
+		<path class="st2" d="M159.5,306.4l110.1-131.8c2-2.4,5.5-2.7,7.9-0.7l1.7,1.4c2.4,2,2.7,5.5,0.7,7.9L169.8,315
+			c-2,2.4-5.5,2.7-7.9,0.7l-1.7-1.4C157.9,312.3,157.6,308.7,159.5,306.4z"/>
+	</g>
+</g>
+<g>
+	<defs>
+		<polygon id="SVGID_3_" points="3,100 94.1,9.3 121,11.9 119.7,114.4 6.2,122 		"/>
+	</defs>
+	<clipPath id="SVGID_4_">
+		<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+	</clipPath>
+	<g class="st3">
+		<path class="st4" d="M0.3,0h78c6.6,0,12,5.4,12,12v64.4c0,6.6-5.4,12-12,12h-78c-6.6,0-12-5.4-12-12V12C-11.7,5.4-6.3,0,0.3,0z"/>
+	</g>
+</g>
+<ellipse transform="matrix(0.866 -0.5 0.5 0.866 -138.651 89.8895)" class="st0" cx="98.4" cy="303.7" rx="37.8" ry="27.6"/>
+<ellipse transform="matrix(0.998 -6.331308e-02 6.331308e-02 0.998 -19.1881 3.3509)" class="st0" cx="43.3" cy="304.4" rx="37.8" ry="27.6"/>
+<rect x="114.1" y="25.8" class="st5" width="97.9" height="33.9"/>
+</svg>

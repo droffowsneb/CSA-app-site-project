@@ -1,17 +1,3 @@
-
-/* function initMap() {
-  var uluru = {lat: 40.1237552, lng: -76.0346457};
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 9,
-    center: uluru
-  });
-  var marker = new google.maps.Marker({
-    position: uluru,
-    map: map
-  });
-} */
-
-
 var map;
 function initMap() {
   var riverCity = {lat: 40.0259761, lng: -75.2274273};
@@ -21,15 +7,8 @@ function initMap() {
   var soomFoods = {lat: 40.00673, lng: -75.12017};
   var daisyFlour = {lat: 40.0401, lng: -76.32451};
 
-  /*
-  // CUSTOM PIN CODE
-  var farmPin = {
-    url: '../images/farm-pin-dark.png',
-    size: new google.maps.Size(20, 33),
-    origin: new google.maps.Point(0, 0),
-    anchor: new google.maps.Point(10, 33),
-  };
-  */
+  var farmPinIcon = 'http://benswofford.com/csa-app-demo/images/farm-pin-blue.png';
+  var rcoIcon = 'http://benswofford.com/csa-app-demo/images/rco-squirrel-50.png';
 
   map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 40.1237552, lng: -75.6146457},
@@ -41,7 +20,9 @@ function initMap() {
   var marker1 = new google.maps.Marker({ // ------------------ River City Outpost ------------------
     map: map,
     position: riverCity,
-    title: 'River City Outpost'
+    title: 'River City Outpost',
+    icon: rcoIcon,
+    zIndex: 1000,
   });
   var riverCityInfo = '<div id="content">'+
     '<div id="siteNotice">'+
@@ -66,6 +47,7 @@ function initMap() {
     map: map,
     position: castleValley,
     title: 'Castle Valley Mill',
+    icon: farmPinIcon,
   });
   var castleValleyInfo = '<div id="content">'+
     '<div id="siteNotice">'+
@@ -90,7 +72,8 @@ function initMap() {
   var marker3 = new google.maps.Marker({ // ------------------ Koffman's Fruit Farm ------------------
     map: map,
     position: koffmansFruit,
-    title: 'Koffman&#39;s Fruit Farm'
+    title: 'Koffman&#39;s Fruit Farm',
+    icon: farmPinIcon,
   });
   var koffmansFruitInfo = '<div id="content">'+
     '<div id="siteNotice">'+
@@ -115,7 +98,8 @@ function initMap() {
   var marker4 = new google.maps.Marker({ // ------------------ Maplehofe Dairy ------------------
     map: map,
     position: maplehofe,
-    title: 'Maplehofe Dairy Farm Store'
+    title: 'Maplehofe Dairy Farm Store',
+    icon: farmPinIcon,
   });
   var maplehofeInfo = '<div id="content">'+
     '<div id="siteNotice">'+
@@ -140,7 +124,8 @@ function initMap() {
   var marker5 = new google.maps.Marker({ // ------------------ Soom Foods ------------------
     map: map,
     position: soomFoods,
-    title: 'Soom Foods'
+    title: 'Soom Foods',
+    icon: farmPinIcon,
   });
   var soomInfo = '<div id="content">'+
     '<div id="siteNotice">'+
@@ -164,7 +149,8 @@ function initMap() {
   var marker6 = new google.maps.Marker({ // ------------------ Daisy Flour ------------------
     map: map,
     position: daisyFlour,
-    title: 'Daisy Flour'
+    title: 'Daisy Flour',
+    icon: farmPinIcon,
   });
   var daisyInfo = '<div id="content">'+
     '<div id="siteNotice">'+
@@ -194,6 +180,11 @@ $(document).ready(function($){
   // My Kitchen item checkmarks toglle
   $('li.kitchen-item').click(function() {
      $(this).find('span').toggleClass('kitchen-item-unchecked kitchen-item-checked');
+  });
+
+  // Home page list carets
+  $('div.list-header').click(function() {
+     $(this).find('span').toggleClass('list-header-open list-header-closed');
   });
 
 });

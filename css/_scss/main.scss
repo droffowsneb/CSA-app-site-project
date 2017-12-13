@@ -188,6 +188,29 @@ li.active{
   margin-right: 5px;
 }
 
+.list-header-open:before{
+  content: "\f0d7  ";
+  display: inline;
+  font-family: FontAwesome;
+  margin-right: 5px;
+}
+
+.list-header-closed:before{
+  content: "\f0da  ";
+  display: inline;
+  font-family: FontAwesome;
+  margin-right: 5px;
+}
+
+a.trigger:hover{
+  text-decoration: none;
+}
+
+.cta-btn{
+  margin-top: 1em;
+  background-color: $secondary-color;
+}
+
 .list-item, .list-header{
   padding: .75rem;
 }
