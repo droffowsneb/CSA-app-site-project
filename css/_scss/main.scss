@@ -202,6 +202,14 @@ li.active{
   margin-right: 5px;
 }
 
+.kitchen-filter-off{
+  background-color: $btn-color !important;
+}
+
+.kitchen-filter-on{
+  background-color: $active-link-color !important;  
+}
+
 a.trigger:hover{
   text-decoration: none;
 }

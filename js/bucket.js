@@ -179,14 +179,20 @@ function initMap() {
 
 $(document).ready(function($){
 
+  // Home page list carets
+  $('div.list-header').click(function() {
+     $(this).find('span').toggleClass('list-header-open list-header-closed');
+  });
+
   // My Kitchen item checkmarks toglle
   $('li.kitchen-item').click(function() {
      $(this).find('span').toggleClass('kitchen-item-unchecked kitchen-item-checked');
   });
 
-  // Home page list carets
-  $('div.list-header').click(function() {
-     $(this).find('span').toggleClass('list-header-open list-header-closed');
+  // My Kitchen shopping filter
+  $('button.kitchen-filter').click(function() {
+    $(this).toggleClass('kitchen-filter-off kitchen-filter-on');
+    $('div.kitchen-body').find('li>span.kitchen-item-checked').parent().toggle();
   });
 
 });
